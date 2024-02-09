@@ -56,6 +56,39 @@ public class InterviewQuestions {
 		return count;
 	}
 	
+	public static void lowerCaseAndUpperCaseLettersCount(String str){
+		
+		int lowerCaseCount = 0;
+		int upperCaseCount = 0;
+		
+		for( char eachChar : str.toCharArray()) {
+			int asciiiCode = (int)eachChar;			
+			if( asciiiCode >= 65 && asciiiCode <= 90) {
+				upperCaseCount++;
+			}else if(asciiiCode >= 97 && asciiiCode <= 122) {
+				lowerCaseCount++;
+			}			
+		}		
+		System.out.println("LoweCase letters Count: "+lowerCaseCount);		
+		System.out.println("UpperCase letters Count: "+upperCaseCount);
+		
+		
+		lowerCaseCount = 0;
+		upperCaseCount = 0;
+		for( int i =0; i < str.length(); i++) {
+			int asciiiCode = (int)str.charAt(i);			
+			if( asciiiCode >= 65 && asciiiCode <= 90) {
+				upperCaseCount++;
+			}else if(asciiiCode >= 97 && asciiiCode <= 122) {
+				lowerCaseCount++;
+			}			
+		}
+		
+		System.out.println("LoweCase letters Count: "+lowerCaseCount);		
+		System.out.println("UpperCase letters Count: "+upperCaseCount);
+		
+	}
+	
 	public static void main(String[] args) {
 
 //		checkPrime(6);
@@ -85,6 +118,9 @@ public class InterviewQuestions {
 		System.out.println(printUniqueCharactersCount(str4));
 		
 		System.out.println(str4.length()-printUniqueCharactersCount(str4));
+		
+		
+		lowerCaseAndUpperCaseLettersCount("HeLLo ThIs JaVa");
 	}
 
 }
