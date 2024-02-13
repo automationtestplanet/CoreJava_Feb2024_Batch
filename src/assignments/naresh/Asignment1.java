@@ -1,6 +1,6 @@
-package assignments.raja;
+package assignments.naresh;
 
-public class Assginment1 {
+public class Asignment1 {
 
 	// Write a reusable program to check the string palindrome or not
 
