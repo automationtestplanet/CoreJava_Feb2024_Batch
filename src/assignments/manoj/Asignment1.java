@@ -26,10 +26,10 @@ public class Asignment1 {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
          
 		Asignment1 cp = new Asignment1();
-		System.out.println(cp.checkPalindrome(575));
+		System.out.println(cp.checkPalindrome(565));
 	}
 
 }
