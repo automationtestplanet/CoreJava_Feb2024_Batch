@@ -1,7 +1,6 @@
-package assignments.sunitha;
+package assignments.balakoti;
 
-public class Asignment1 {
-
+public class Assignment2 {
 	// Write a reusable program to check the number prime or not
 
 	public boolean checkPrime(int num) {
@@ -12,5 +11,4 @@ public class Asignment1 {
 		// TODO Auto-generated method stub
 
 	}
-
 }
