@@ -1,4 +1,4 @@
-package absraction;
+package src.absraction;
 
 abstract public class AbstractClass {
 
