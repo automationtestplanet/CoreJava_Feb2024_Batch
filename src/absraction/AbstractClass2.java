@@ -1,4 +1,4 @@
-package src.absraction;
+package absraction;
 
 public class AbstractClass2 extends AbstractClass {
 

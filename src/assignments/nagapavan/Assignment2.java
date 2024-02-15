@@ -1,4 +1,4 @@
-package src.assignments.nagapavan;
+package assignments.nagapavan;
 
 public class Assignment2 {
 	// Write a reusable program to check the number prime or not
