@@ -9,5 +9,4 @@ public class ArithematicOperations {
 		Calculator calc = new UseCalculator();
 		System.out.println(calc.addition(10, 20));
 	}
-
 }
