@@ -1,4 +1,4 @@
-package assignments.siva;
+package assignments.lakshman;
 
 public class Asignment1 {
 
