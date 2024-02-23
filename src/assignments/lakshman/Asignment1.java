@@ -2,15 +2,25 @@ package assignments.lakshman;
 
 public class Asignment1 {
 
-	// Write a reusable program to check the number prime or not
 
-	public boolean checkPrime(int num) {
-		return false;
+		public static void main(String[] args) {
+			int num=7;
+			int count=0;
+			for(int i=1;i<=num;i++)
+			{
+				if(num%i==0)
+					count++;
+			}
+			
+			if(count==2)
+			{
+				System.out.println("it is a prime");
+			}
+			
+			else
+			{
+				System.out.println("it is not a prime");
+			}
+		}
+
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
