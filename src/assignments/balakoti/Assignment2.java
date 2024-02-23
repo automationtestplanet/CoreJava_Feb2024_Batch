@@ -7,7 +7,7 @@ public class Assignment2 {
 		        if (number <= 1) {
 		            return false;
 		        }
-		        for (int i = 2; i <= Math.sqrt(number); i++) {
+		        for (int i = 2; i <number; i++) {
 		            if (number % i == 0) {
 		                return false;
 		            }
@@ -16,7 +16,7 @@ public class Assignment2 {
 		    }
 
 		    public static void main(String[] args) {
-		        int num = 9; // Change this to the number you want to check
+		        int num = 2; // Change this to the number you want to check
 		        if (isPrime(num)) {
 		            System.out.println(num + " is a prime number.");
 		        } else {
