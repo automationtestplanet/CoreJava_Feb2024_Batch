@@ -6,11 +6,10 @@ public class Asignment1 {
 
 	public boolean checkPrime(int num) {
 		int ctr=0;
-		while(num>=1)
+		for(int i=1;i<=num;i++)
 		{
-			if(num%2==0)
+			if(num%i==0)
 				ctr++;
-			num--;
 		}
 		if(ctr==2)
 			return true;
