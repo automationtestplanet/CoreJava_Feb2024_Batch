@@ -1,4 +1,4 @@
-package src.assignments.manoj;
+package assignments.manoj;
 
 public class Assignment3 {
 	

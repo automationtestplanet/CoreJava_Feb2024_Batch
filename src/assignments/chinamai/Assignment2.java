@@ -1,4 +1,4 @@
-package src.assignments.chinamai;
+package assignments.chinamai;
 
 public class Assignment2 {
 	

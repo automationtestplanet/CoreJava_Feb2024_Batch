@@ -1,4 +1,4 @@
-package src.assignments.nagapavan;
+package assignments.nagapavan;
 
 public class Assignment3 {
 	

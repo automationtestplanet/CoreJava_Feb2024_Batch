@@ -1,4 +1,4 @@
-package src.assignments.balakoti;
+package assignments.balakoti;
 
 public class Assignment3 {
 	
