@@ -5,14 +5,14 @@ public class Assignment2 {
 
 	public boolean checkPrime(int num) {
 
-		int n=num;
-		boolean prime=true;
-		if(n<=1) {
+		int n = num;
+		boolean prime = true;
+		if (n <= 1) {
 			prime = false;
 			return prime;
-		}else {
-			for(int i=2;i<n;i++) {
-				if(n%i == 0) {
+		} else {
+			for (int i = 2; i < n; i++) {
+				if (n % i == 0) {
 					prime = false;
 					break;
 				}
