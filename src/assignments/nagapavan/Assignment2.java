@@ -3,29 +3,34 @@ package assignments.nagapavan;
 public class Assignment2 {
 	// Write a reusable program to check the number prime or not
 
-	public static boolean checkPrime(int num) {
+	public boolean checkPrime(int num) {
 
-		if (num <= 1)
-			return false;
-
-		for (int i = 2; i < num; i++)
-			if (num % i == 0)
-				return false;
-
-		return true;
+		int n=num;
+		boolean prime=true;
+		if(n<=1) {
+			prime = false;
+			return prime;
+		}else {
+			for(int i=2;i<n;i++) {
+				if(n%i == 0) {
+					prime = false;
+					break;
+				}
+			}
+		}
+		return prime;
 	}
 
 	public static void main(String[] args) {
-		if (checkPrime(7)) {
-			System.out.println("true");
-		} else {
-			System.out.println("false");
+		
+		int num=28;
+		Assignment2 ag=new Assignment2();
+		boolean prime =ag.checkPrime(num);
+		
+		if(prime) {
+			System.out.println("prime number: "+num);
+		}else {
+			System.out.println("Not prime number: "+num);
 		}
-		if (checkPrime(23)) {
-			System.out.println("true");
-		} else {
-			System.out.println("false");
-		}
-
 	}
 }
