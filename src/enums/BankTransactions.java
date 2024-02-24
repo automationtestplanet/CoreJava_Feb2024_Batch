@@ -1,4 +1,4 @@
-package exceptions;
+package enums;
 
 import exceptions.BankTransactionException;
 
@@ -6,24 +6,24 @@ public class BankTransactions {
 	
 	static int balance = 100000;
 
-	public void deposit(String accountType, int depositAmt) throws BankTransactionException {
+	public void deposit(AccountTypes accountType, int depositAmt) throws BankTransactionException {
 		switch (accountType) {
-		case "SAVINGS":
+		case SAVINGS:
 			if (depositAmt <= 200000) {
 				balance += depositAmt; // balance = balance + depositAmt;
 			} else {
 				throw new BankTransactionException("Deposit amount exceeded the daily limit 200000");
 			}
 			break;
-		case "CURRENT":
+		case CURRENT:
 			if (depositAmt <= 500000) {
 				balance += depositAmt; // balance = balance + depositAmt;
 			} else {
 				throw new BankTransactionException("Deposit amount exceeded the daily limit 500000");
 			}
 			break;
-		case "RETAIL":
-			if (depositAmt <= 200000) {
+		case RETAIL:
+			if (depositAmt <= 1000000) {
 				balance += depositAmt; // balance = balance + depositAmt;
 			} else {
 				throw new BankTransactionException("Deposit amount exceeded the daily limit 1000000");
