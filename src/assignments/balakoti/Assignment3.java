@@ -18,4 +18,8 @@ public class Assignment3 {
  b=c;
 	}	
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 125c2f6d02b332cd62da6f6c89955a85cc4073eb
