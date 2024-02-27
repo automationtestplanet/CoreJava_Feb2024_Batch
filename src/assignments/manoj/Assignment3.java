@@ -19,11 +19,13 @@ public class Assignment3 {
 		}
 	}
 
+
 	public static void main(String[] args) {
 		int count = 0;
 		Assignment3 fn = new Assignment3();
 		fn.printFibonacci(count-2);
-
 	}
+
+	
 
 }

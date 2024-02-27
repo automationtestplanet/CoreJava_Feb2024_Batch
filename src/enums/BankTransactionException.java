@@ -1,4 +1,4 @@
-package exceptions;
+package enums;
 
 public class BankTransactionException extends Exception{
 	
