@@ -76,7 +76,7 @@ public class SetEx {
 		
 		System.out.println();
 		System.out.println("-----------------TreeSet--------------------");
-		Set treeSet1 = new TreeSet();
+		Set<Integer> treeSet1 = new TreeSet<>();
 		
 		System.out.println("Size:"+linkedHashSet1.size());		
 		System.out.println("Is Empty: "+linkedHashSet1.isEmpty());
