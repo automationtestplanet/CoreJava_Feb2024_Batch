@@ -1,16 +1,27 @@
 package assignments.sunitha;
 
-public class Asignment1 {
 
+public class Asignment1
+{
 	// Write a reusable program to check the number prime or not
-
-	public boolean checkPrime(int num) {
+	public static  boolean checkPrime(int num) {
+		if(num<=1)
+			return false;
+		for(int i=2;i<num;i++)
+			if(num%i==0)
+				
 		return false;
+		return true;
+			}
+
+		public static void main() {
+			if(checkPrime(11))
+		     System.out.println("true");
+			else
+				System.out.println("false");
+			
+			
+		}
+		
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
+		
