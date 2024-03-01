@@ -8,7 +8,7 @@ public class ListEx {
 
 	public static void main(String[] args) {
 		
-		List arrayList = new ArrayList();
+		List<Object> arrayList = new ArrayList<Object>();
 		
 		System.out.println("-----------------------ArrayList-----------------------");
 		System.out.println("Size:"+arrayList.size());		
@@ -43,7 +43,7 @@ public class ListEx {
 		System.out.println("Is Empty: "+arrayList.isEmpty());
 		
 		System.out.println("-----------------------LinkedList-----------------------");
-		List likedList = new LinkedList();
+		List<Object> likedList = new LinkedList<Object>();
 		
 		System.out.println("Size:"+likedList.size());		
 		System.out.println("Is Empty: "+likedList.isEmpty());

@@ -10,7 +10,7 @@ public class SetEx {
 	public static void main(String[] args) {
 		//import all classes ata time, use short cut Ctrl+Shift+O
 		System.out.println("-----------------HashSet--------------------");
-		Set hastSet = new HashSet();
+		Set<Object> hastSet = new HashSet();
 		
 		System.out.println("Size:"+hastSet.size());		
 		System.out.println("Is Empty: "+hastSet.isEmpty());
@@ -43,7 +43,7 @@ public class SetEx {
 		
 		System.out.println();
 		System.out.println("-----------------LinkedHashSet--------------------");
-		Set linkedHashSet1 = new LinkedHashSet();
+		Set<Object> linkedHashSet1 = new LinkedHashSet();
 		
 		System.out.println("Size:"+linkedHashSet1.size());		
 		System.out.println("Is Empty: "+linkedHashSet1.isEmpty());
@@ -76,7 +76,7 @@ public class SetEx {
 		
 		System.out.println();
 		System.out.println("-----------------TreeSet--------------------");
-		Set treeSet1 = new TreeSet();
+		Set<Integer> treeSet1 = new TreeSet();
 		
 		System.out.println("Size:"+linkedHashSet1.size());		
 		System.out.println("Is Empty: "+linkedHashSet1.isEmpty());
