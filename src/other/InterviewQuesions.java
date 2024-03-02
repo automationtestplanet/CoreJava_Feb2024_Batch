@@ -14,5 +14,4 @@ public class InterviewQuesions {
 		String str1 = "page 44 of 99";
 		System.out.println(getSumOfNumFromStr(str1));
 	}
-
 }
