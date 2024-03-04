@@ -1,0 +1,150 @@
+
+BDD-Behaviourial Driven Development
+
+Cucumber -> Java, Javasript, C#, Ruby, Python
+JBheave -> Java
+Specflow ->Javascript
+
+BDD - Gherkin business language
+Using Gherkin Syntax, we write the features and scenarios 
+
+Gherkn follows some Keywords, Gherin Keywords
+
+
+Features:
+---------
+
+Feature: Login functionality Test
+
+Backgorund:
+	Given DB Connect
+	When setup data
+
+@vlaidCredential
+Scenario: Login with vlaid credentials
+	Given - Pre-Condition
+	When - Actual Test / Action
+	And  - Extra Action
+	Then - Result (Verification)
+	And - Extra Verificaion
+	But - Conditional Verifcation
+	
+Scenario: Login with in-vlaid credentials
+	Given - Pre-Condition
+	When - Actual Test / Action "Admin123" and "Admin123"
+	And  - Extra Action
+	Then - Result (Verification)
+	And - Extra Verificaion
+	But - Conditional Verifcation
+	
+	
+Scenario Ouline: Multiple users
+	Given - Pre-Condition
+	When - Actual Test / Action "<Usename>" and "<Password>"
+	And  - Extra Action
+	Then - Result (Verification)
+	And - Extra Verificaion
+	But - Conditional Verifcation
+Examples:
+	|Usename|Password|
+	|Admin123|Admin123|
+	|Admin234|Admin234|
+	
+
+
+Automation:
+-----------
+	Cucumber
+	
+	Feature.file
+	
+	StepDefinition:
+	--------------
+		class ClassName{
+			
+			@BeforeTest
+			public void beforeLaunchBrowser(){
+			}
+			
+			@AfterTest
+			public void afterCloseTheBrowser(){
+			}
+		
+			@Given("Pre-Condition")
+			public void launchBrowser(){
+				WebDriver driver = new ChromeDrier();
+				driver.get("URL");
+			}
+			
+			@Given("Pre-Condition")
+			def launchBrowser(){
+				WebDriver driver = new ChromeDrier();
+				driver.get("URL");
+			}
+			
+			@When("Action {string} {string}")
+			public void enterUserNameAndPassword(String userName, String password){				
+				driver.findElement(By.xpath("xpath")).sendKeys(userName);
+				driver.findElement(By.xpath("xpath")).sendKeys(password);
+				driver.findElement(By.xpath("xpath")).click();
+			}
+		}
+		
+		
+	Test Runner:
+	-----------
+	@RunWith(Cucumber.class)
+	@CucmberOptions(	
+		feature="src/test/Feature.feature",
+		glue=src/code/packagename,
+		plugin="/report.html",
+		tags="@vlaidCredential",
+		dryRun=true,
+		strict=true
+	)
+	
+	class TestRunner{
+	
+		@BeforeTest
+		public void loadFiles(){
+		}
+		
+		@AfterTest
+		public void generateTheResults(){
+		
+		}
+	}
+	
+	
+	
+Selenium Version : 3.141.59
+Java: Java-1.8
+Cucumber: 5.x
+
+Python : 3.13
+
+
+Difference Between Scenaro and Scenario Outline
+	
+What is the use of Background keyword
+What is the use of hooks
+Difference between Background and hooks
+What is the use of tags
+
+Gherkin Keywords
+
+What is the use Test Runner file
+	feature and glue	
+	dryRun keyword
+	strict keyword
+	
+	
+	Step Definition:
+		Cucumber Annotations
+		
+		
+Selenium Locators:
+------------------
+	
+	
+	
